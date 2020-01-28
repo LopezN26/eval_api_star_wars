@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <title>Characters</title>
+    <script src="../js/jquery.js"></script>
+
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+
+    <link rel="stylesheet" href="../css/main.css">
+</head>
+<body>
+<main>
+    <!--Logo-->
+    <figure>
+        <img src="../images/logostarwars.png">
+        <h2>API</h2>
+        <h2>--</h2>
+        <h2>Characters</h2>
+    </figure>
+    <!--fin-Logo-->
+    <section class="container-fluid">
+        <div class="row">
+            <div class="col-sm-4"><a href="../index.html">Home</a></div>
+            <div class="col-sm-4"><a href="planets.html">Planets</a></div>
+            <div class="col-sm-4"><a href="search.html">Search</a></div>
+        </div>
+    </section>
+
+    <!--Tableau-->
+    <section class="container-fluid">
+        <div class="row">
+            <div class="col-sm-4"> Character's name </div>
+        </div>
+    </section>
+    <section class="container-fluid" id="tableau">
+    </section>
+    <div>
+        <button type="button" class='btn btn-dark' id="previous">Previous</button>
+        <button type="button" class='btn btn-dark' id="next">Next</button>
+    </div>
+    <!--fin-Tableau-->
+
+    <!--Modal-->
+    <div class="modal" tabindex="-1" role="dialog" id="modal">
+        <div class="modal-dialog" role="document">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title">Character's Details</h5>
+                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                        <span aria-hidden="true">&times;</span>
+                    </button>
+                </div>
+                <div class="modal-body" id="modalBody">
+                    <p>Name</p>
+                    <div id="name"></div>
+                    <p>Height</p>
+                    <div id="height"></div>
+                    <p>Mass</p>
+                    <div id="mass"></div>
+                    <p>Gender</p>
+                    <div id="gender"></div>
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class='btn btn-dark' data-dismiss="modal">Close</button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+
+
+
+
+    <!--fin-Modal-->
+</main>
+</body>
+
+<script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js" integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6" crossorigin="anonymous"></script>
+
+<script src="../js/characters.js"></script>
+</html>

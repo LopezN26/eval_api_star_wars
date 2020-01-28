@@ -1,0 +1,57 @@
+@font-face {
+    font-family: "starWars";
+    src: url("../font/StarJediRounded-jW3R.ttf");
+}
+main
+{
+    background-image: url("../images/background.jpg");
+    color: white;
+    background-position: right;
+    background-size: cover;
+}
+figure
+{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+figure>img
+{
+    width: 20vw;
+    height: 15vw;
+    padding: 0;
+    margin: 0;
+}
+figure>h2 {
+    padding: 0;
+    margin: 0;
+    font-size: 3rem;
+    color: black;
+    text-shadow:2px 0px #ffe960, 0px 2px #ffe960, -2px 0px #ffe960, 0px -2px #ffe960;
+}
+{
+    color: white;
+}
+a:visited
+{
+    color :blue;
+}
+.row
+{
+    text-align: center;
+
+}
+.row a{
+    color: white;
+    font-size: 2em;
+}
+#message
+{
+    font-size: 2em;
+    font-style: italic;
+    margin-top: 2em;
+}
+.center
+{
+    text-align: center;
+}
