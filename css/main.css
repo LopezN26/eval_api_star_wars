@@ -1,6 +1,6 @@
 @font-face {
     font-family: "starWars";
-    src: url("../font/StarJediRounded-jW3R.ttf");
+    src: url("../font/Starjedi.ttf");
 }
 main
 {
@@ -8,9 +8,11 @@ main
     color: white;
     background-position: right;
     background-size: cover;
+    font-family: "starWars";
 }
 figure
 {
+    font-family: "starWars";
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -32,10 +34,6 @@ figure>h2 {
 {
     color: white;
 }
-a:visited
-{
-    color :blue;
-}
 .row
 {
     text-align: center;
@@ -44,6 +42,7 @@ a:visited
 .row a{
     color: white;
     font-size: 2em;
+    text-shadow:3px 0px black, 0px 3px black, -3px 0px black, 0px -3px black;
 }
 #message
 {
@@ -51,7 +50,81 @@ a:visited
     font-style: italic;
     margin-top: 2em;
 }
-.center
+#tableau
 {
-    text-align: center;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    border: 2px solid white;
+    border-radius: 5px;
+    background-color: rgba(64, 64, 64, 0.73);
+    width: 90vw;
+    margin-bottom: 10px;
+}
+#tableau .btn-dark
+{
+    background-color: black;
+    border: solid 2px #ffe960;
+    background-image: url("../images/bg-buttons.jpeg");
+    background-size: contain;
+}
+#tableau .btn-dark:hover
+{
+    color: black;
+    border: solid 2px #ffd900;
+    text-shadow:1px 0px #ffe960, 0px 1px #ffe960, -1px 0px #ffe960, 0px -1px #ffe960;
+}
+.ligne
+{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    width: 80vw;
+    margin: 3px;
+    text-shadow:2px 0px black, 0px 2px black, -2px 0px black, 0px -2px black;
+}
+#divButtons
+{
+    display: flex;
+    justify-content: center;
+    width: 100vw;
+}
+#divButtons>div
+{
+    display: flex;
+    justify-content: space-around;
+    width: 50vw;
+}
+#divButtons button
+{
+    border: solid 2px #ffd900;
+    margin: 5px;
+    background-image: url("../images/bg-buttons.jpeg");
+    background-size: contain;
+}
+
+#divButtons button:hover
+{
+    color: black;
+    border: solid 2px #ffd900;
+    text-shadow:1px 0px #ffe960, 0px 1px #ffe960, -1px 0px #ffe960, 0px -1px #ffe960;
+}
+
+#modal
+{
+    text-shadow:1px 0px black, 0px 1px black, -1px 0px black, 0px -1px black;
+}
+#modal p
+{
+    margin-bottom: 0.1rem;
+    margin-top: 1.5rem;
+}
+#modal button
+{
+    background-color: #262626;
+}
+#modal button:hover
+{
+    background-image: url("../images/bg-buttons.jpeg");
+    background-size: contain;
 }

@@ -13,9 +13,8 @@ function requestList(i)
             for (i=0;i<10;i++)
             {
                 let url=rep.results[i].url;
-                //console.log(url);
-                /*tableau.append("<div class=\"row\"><div class=\"col-sm-12\" onclick=\"requestDetails("+rep.results[i].url+")>"+rep.results[i].name+"</div></div>");*/
-                tableau.append("<div class=\"row\"><div class=\"col-sm-10\">"+rep.results[i].name+"</div><button type='button' onclick=\"requestDetails('"+url+"')\" class='btn btn-dark' data-toggle='modal' data-target='#modal'>Détails</button></div>");
+
+                tableau.append("<div class=\"ligne\"><div>"+rep.results[i].name+"</div><button type='button' onclick=\"requestDetails('"+url+"')\" class='btn btn-dark' data-toggle='modal' data-target='#modal'>Details</button></div>");
             }
         }
     });

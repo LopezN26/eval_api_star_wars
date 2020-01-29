@@ -5,11 +5,18 @@ function requestPlanet(i)
         type : "GET",
         data:{},
         success: function (rep) {
-            var liste=$("#liste");
-            liste.html("");
-            for (i=0;i<rep.results.length;i++)
+            var tableau=$("#tableau");
+            tableau.html("");
+            if (rep.results.length==0)
             {
-                liste.append("<div class=\"row\"><div class=\"col-sm-10\">"+rep.results[i].name+"</div></div>");
+                tableau.append("<div class=\"ligne\"><div >No Planet found</div>");
+            }
+            else
+            {
+                for (i=0;i<rep.results.length;i++)
+                {
+                    tableau.append("<div class=\"ligne\"><div>"+rep.results[i].name+"</div></div>");
+                }
             }
         }
     });
@@ -23,11 +30,18 @@ function requestCharacter(i)
         type : "GET",
         data:{},
         success: function (rep) {
-            var liste=$("#liste");
-            liste.html("");
-            for (i=0;i<rep.results.length;i++)
+            var tableau=$("#tableau");
+            tableau.html("");
+            if (rep.results.length==0)
             {
-                liste.append("<div class=\"row\"><div class=\"col-sm-10\">"+rep.results[i].name+"</div></div>");
+                tableau.append("<div class=\"ligne\"><div class=\"col-10\">No Character found</div>");
+            }
+            else
+            {
+                for (i=0;i<rep.results.length;i++)
+                {
+                    tableau.append("<div class=\"ligne\"><div class=\"col-10\">"+rep.results[i].name+"</div></div>");
+                }
             }
         }
     });
